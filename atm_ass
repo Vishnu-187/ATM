@@ -1,0 +1,37 @@
+print("WELCOME..!")
+
+print("insert your card..!")
+balance = 50000
+pin = "1234"
+pin_num = input("Enter the pin:")
+if pin_num=="1234":
+    print("Its correct Pin")
+    print("1.Withdraw",
+          "\n2.Deposit")
+          
+    option=int(input("Select Your Option(1/2) :"))
+    if option == 1:
+        a= int(input("Withdraw amount:"))
+        if a>=1000 and a<=10000:
+            print("Wait for your Transation")
+            print("Acc Balance :",balance - a)
+        
+        else:
+            print("Sorry Tryagain")
+
+    elif option == 2:
+        a= int(input("Deposite amt:"))
+        if a>=1000 and a<=10000:
+            print("Successfully Deposit ")
+            print("Acc Balance :",balance + a)
+        else :
+            print("Sorry Tryagain")
+
+    else:
+        print("Select your correct option")
+        
+        
+else:
+    print("Invalide pin")
+
+print("Thankyou!")
