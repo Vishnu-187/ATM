@@ -1,0 +1,24 @@
+class student:
+    def __init__(self):
+        self.Name = input("Enter Your Name :")
+        self.Age = int(input("Enter your age : "))
+        self.Dept = input("Enter Your Department :")
+        self.program =int(input("Choose your program : \n 1.Singing\n 2.Dancing\n Select[1/2] : "))
+    def singing(self):
+        print(f"{self.Name} is Singing")
+
+    def dancing(self):
+        print(f"{self.Name} is Dancing")
+
+    def select_option(self):
+        if self.program == 1:
+            self.singing()
+        elif self.program == 2:
+            self.dancing()
+        else :
+            print("Invalid option..!! \n TRYAGAIN")
+            return(student)
+        
+details=student()
+details.select_option()
+
